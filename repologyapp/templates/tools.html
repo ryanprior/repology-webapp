@@ -7,13 +7,17 @@
 <div class="container">
 
 <ul>
-	<li><a href="{{ url_for('trending') }}">Trending and declining projects</a> - list of projects added to or removed from a lot of repositories recently</li>
 	<li>
     <a href="{{ url_for('tool_project_by') }}">Link by package name</a><br />
     Instead of manually looking up the names of packages in Repology to create
     links or badges, let our database do the work. With this tool you can
     generate links to Repology project pages and badges using just the package
     name from your favorite repository.
+  </li>
+	<li>
+    <a href="{{ url_for('trending') }}">Trending projects</a><br />
+    Discover projects that have been added to many repos recently and see which
+    packages are declining.
   </li>
 </ul>
 
